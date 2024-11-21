@@ -161,6 +161,10 @@ type SourceOptions struct {
 	// extendParams string
 }
 
+func (so SourceOptions) SetDB(db string) {
+	so.db = db
+}
+
 // ExplainInfo 执行计划信息
 type ExplainInfo struct {
 	// gorm.Model
